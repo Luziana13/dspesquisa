@@ -17,7 +17,6 @@ public class GameService {
 	@Autowired 
 	public GameRepository repository;
 	
-
 	//EVITAR LOKING NO BANCO POIS O NIVEL DE BLOQUEIO É BAIXO JA QUE É UMA OPERAÇÃO SOMENTE DE BUSCAR
 	@Transactional(readOnly = true)
 	public List<GameDTO> findAll(){
